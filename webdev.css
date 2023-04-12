@@ -1,0 +1,387 @@
+.header {
+    padding: 200px;  
+    background: #091043;
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-image: url("images/web-development.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.header h1 {
+  font-size: 40px;
+  text-align: left;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  padding: 0px;
+}
+.side {
+  flex: 25%;
+  background-color: #ffffff; 
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.main {
+  flex: 75%;
+  background-color: rgb(17, 26, 48);
+  padding: 20px;
+  padding-bottom: 0px;
+}
+.side h2{
+    color: white;
+    font-size: 40px;
+}
+.main h2{
+    color: white;
+}
+.main p{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 0px;
+}
+.side p{
+    color: black;
+    font-size: 20px;
+    
+    bottom: 0px;
+}
+.side h2{
+    color: black;
+}
+.main h4{
+    color: white;
+}
+.side img{
+    float: left; 
+    margin-right: 10px;
+}
+.Instructor img{
+    float: left; 
+    margin-right: 10px;
+}
+.navbar {
+  overflow: hidden; 
+  background-color: rgb(11, 52, 99); 
+}
+.navbar a {
+  float: left;
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 20px 50px; 
+  text-decoration: none; 
+}
+.navbar a.right {
+  float: right; 
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.Syllabus p{
+    color: white;
+    font-size: 20px;
+}
+.Instructor p{
+    color: white;
+    font-size: 20px;
+}
+.Syllabus h2{
+    color: white;
+}
+.Instructor h2{
+    color: white;
+}
+.center {
+  display: block;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 20px;
+  width: 60%;
+}
+.flip-box {
+  background-color: transparent;
+  width: 877px;
+  height: 105px;
+  perspective: 1000px; 
+  text-align: center;
+  margin-left: 20px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 95%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-left: 20px;
+}
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0px 18px;
+  width: 95%;
+  margin-left: 20px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.Syllabus img{
+    float: left;
+    margin-right: 10px;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  box-sizing:border-box
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Create three columns of equal width */
+.columns {
+    box-sizing: border-box;
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  margin-left: 200px;
+}
+
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 white
+}
+
+/* Pricing header */
+.price .header1 {
+  background-color: rgb(14, 93, 171);
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: rgb(34, 62, 71);
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+.columns2 {
+    box-sizing: border-box;
+  float: right;
+  width: 33.3%;
+  padding: 8px;
+  margin-right: 200px;
+}
+
+/* Style the list */
+.price2 {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price2:hover {
+  box-shadow: 0 8px 12px 0 white
+}
+
+/* Pricing header */
+.price2 .header2 {
+  background-color: rgb(14, 93, 171);
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price2 li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Grey list item */
+.price2 .grey2 {
+  background-color: rgb(34, 62, 71);
+  font-size: 20px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns2 {
+    width: 100%;
+  }
+}
